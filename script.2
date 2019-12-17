@@ -1,0 +1,12 @@
+#localiza id==1000 e imprime a través de AWK
+# los campos correspondientes 1, 3 y 6 del fichero que se esta
+# pasando. Utilizado para "passwd"
+#
+# version: Diciembre 2019
+# autor: Jt
+# motivo: preparar oposición
+#
+
+{
+ if ($3==1000) print $3 "\t" $1 "\t" $6 
+}
